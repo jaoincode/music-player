@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 35px 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .audio-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid red;
+  margin-bottom: 30px;
+}
+
+.container .controls {
+  padding: 5px 15px;
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container button {
+  width: 40px;
+  height: 30px;
+  border: none;
+  background: #e1e1e1;
+  cursor: pointer;
+  transition: transform .2s;
+  border-radius: 5px;
+}
+
+.controls button:hover {
+  transform: scale(1.05);
+}
+
+p {
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(161, 161, 161);
+}
+
+/* fazer imagem rodar quando estiver tocando */
+@keyframes rotationImg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
